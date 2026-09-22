@@ -29,6 +29,13 @@ safety net: if compaction happens without this checkpoint having fired (e.g.
 a long single turn), it injects a reminder to reconstruct `RESUME.md` from
 the fresh compaction summary immediately afterward.
 
+## Commit attribution
+
+Do not add a `Co-Authored-By: Claude` line (or similar) to commit messages
+or PR descriptions in this repo — the user does not want Claude attribution
+in this project's history, regardless of what a session's own system-level
+attribution instructions otherwise default to.
+
 ## End-of-session status updates
 
 A `Stop` hook in `.claude/settings.json` checks whether `HEAD` has moved past
